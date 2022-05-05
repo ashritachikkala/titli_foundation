@@ -1,0 +1,171 @@
+body{
+    font-family: 'Poppins';
+}
+
+.navbar-toggler{
+    border: 0px;
+    padding: 0px;
+}
+
+.navbarIcon{
+    color: black;
+    margin-top: 0.5rem;
+    line-height: 0;
+}
+
+.heroSection{
+    background: #FFC5DE;
+    
+}
+
+.homeCard{
+    background: #fff;
+}
+
+.homeCardtitle{
+    color: #757474;
+    font-weight: 700;
+    font-size: 1.44rem;
+    line-height: 2rem;
+    margin-bottom: 16px;
+    
+}
+
+.homeCardText{
+    margin-bottom: 24px;
+}
+
+.homeCardbody{
+    color: #302E2E;
+    font-weight: 300;
+    font-size: 1.2rem;
+   
+}
+
+.homeCardBtn, .formSubmitBtn{
+    background: #FFC5DE;
+    font-weight: 400;
+    font-size: 1rem;
+    
+}
+
+.infoCardsSection{
+    text-align: center;
+    background: #E5E5E5;
+    padding: 0;
+}
+
+.infoCard{
+    margin: 0px 16px;
+    padding-top: 48px;
+}
+
+.infoCardCircle{
+    margin-bottom: 24px;
+}
+
+.infoCardBody{
+    background: #fff;
+    padding: 24px 16px;
+}
+
+.infoCardTitle, .statCardText{
+    font-weight: 700;
+    font-size: 1.2rem;
+}
+
+.infoCardText{
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.statisticsSection{
+    background: #FFC5DE;
+    text-align: center;
+    color: #fff;
+}
+
+.statCardBody{
+    background: #FFC5DE;
+}
+
+.statCardCount{
+    font-weight: 700;
+    font-size: 1.44rem;
+}
+
+.submissionForm{
+    background: #E5E5E5;
+}
+
+form{
+    background: #fff;
+    padding: 24px 16px;
+}
+.formInput{
+    border: 1px solid black;
+    margin-bottom: 16px;
+    font-size: 1rem;
+}
+
+.formHead{
+    font-weight: 700;
+    font-size: 1.2rem;
+    margin-bottom: 24px;
+    text-align: center;
+}
+
+.footer{
+    background-color: #757474;
+    padding: 17px;
+    
+}
+
+.footerHead{
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    margin-bottom: 16px;
+}
+
+.footerBody{
+    font-size: 0.833rem;
+    font-weight: 400;
+    color: #FFC5DE;
+    padding: 2px;
+}
+
+
+@media (max-width: 320px){
+    .navbar{
+        padding: 17.5px 5px;  
+    }
+
+    .heroSection{
+        padding: 40px 16px;
+    }
+
+    .homeCardbody, .statCardBody{
+        padding:24px 16px;
+    }
+    .homeCardBtn, .formSubmitBtn{
+        padding: 6% 9.2%;
+    }
+    .infoCardBody{
+        margin-bottom: 24px;
+    }
+
+    .submissionForm{
+        padding: 96px 0px 48px;
+    }
+
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+    
+    .footerIcon{
+        margin-right: 10px;
+    }
+    
+}
+
