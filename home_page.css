@@ -1,5 +1,10 @@
 body{
     font-family: 'Poppins';
+    overflow-x: hidden !important;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 .navbar-toggler{
@@ -42,12 +47,19 @@ body{
    
 }
 
-.homeCardBtn, .formSubmitBtn{
+.homeCardBtn{
     background: #FFC5DE;
     font-weight: 400;
     font-size: 1rem;
     
 }
+
+.joinUsFormBtn{
+    background-color: #FFC5DE;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
 
 .infoCardsSection{
     text-align: center;
@@ -57,7 +69,6 @@ body{
 
 .infoCard{
     margin: 0px 16px;
-    padding-top: 48px;
 }
 
 .infoCardCircle{
@@ -94,31 +105,48 @@ body{
     font-size: 1.44rem;
 }
 
-.submissionForm{
+.joinUsSection{
     background: #E5E5E5;
+    text-align: center;
 }
 
-form{
-    background: #fff;
-    padding: 24px 16px;
-}
-.formInput{
-    border: 1px solid black;
-    margin-bottom: 16px;
-    font-size: 1rem;
-}
-
-.formHead{
+.joinUsHead{
     font-weight: 700;
     font-size: 1.2rem;
-    margin-bottom: 24px;
+    margin-bottom: 16px;
+}
+
+.joinUsText{
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 40px;
+}
+
+.joinUsProcess{
     text-align: center;
+}
+
+
+
+.processCardCircle{
+    margin-bottom: 16px;
+}
+
+.processCardCircletext{
+    font-weight: 700;
+    font-size: 24px;
+    text-align: center;
+}
+
+.processCardText{
+    text-align: center;
+    font-weight: 400;
+    font-size: 1rem;
 }
 
 .footer{
     background-color: #757474;
-    padding: 17px;
-    
+    padding: 17px;   
 }
 
 .footerHead{
@@ -148,15 +176,19 @@ form{
     .homeCardbody, .statCardBody{
         padding:24px 16px;
     }
-    .homeCardBtn, .formSubmitBtn{
+    .homeCardBtn, .joinUsFormBtn{
         padding: 6% 9.2%;
+    }
+
+    .infoCard{
+        padding-top: 48px;
     }
     .infoCardBody{
         margin-bottom: 24px;
     }
 
-    .submissionForm{
-        padding: 96px 0px 48px;
+    .joinUsSection{
+        padding: 40px;
     }
 
     .footerBodyText{
@@ -169,3 +201,147 @@ form{
     
 }
 
+@media (min-width: 321px) and (max-width: 376px){
+    .navbar{
+        padding: 17.5px 5px;  
+    }
+    .heroSection{
+        padding: 40px 16px;
+    }
+    .homeCardbody, .statCardBody{
+        padding:24px 16px;
+    }
+    
+    .homeCardBtn, .joinUsFormBtn{
+        padding: 6% 9.2%;
+    }
+    .infoCard{
+        padding-top: 48px;
+    }
+    .infoCardBody{
+        margin: 0px 2px 24px;
+    }
+    .statCardBody{
+        margin: 0px 10px 24px;
+    }
+
+    .joinUsSection{
+        padding: 40px;
+    }
+    
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+    
+    .footerIcon{
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 376px) and (max-width: 668px){
+    .navbar{
+        padding: 8px;  
+    }
+    .heroSection{
+        padding: 40px 16px;
+    }
+    .homeCardbody, .statCardBody{
+        padding:24px 16px;
+    }
+    
+    .homeCardBtn, .joinUsFormBtn{
+        padding: 2.6% 3.9%;
+    }
+    
+    .infoCard{
+   
+        padding-top: 48px;
+        
+        margin-right: 0px;
+    }
+    .infoCardBody{
+        margin: 0px 24px 24px 10px;
+        padding: 24px;
+    }
+    .statCardBody{
+        margin: 40px 24px 24px 10px;
+        padding: 40px;
+    }
+
+    .joinUsSection{
+        padding: 40px;
+    }
+    
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+    
+    .footerIcon{
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 668px){
+    .homeCardbody{
+        padding: 54px 16px;
+    }
+    .homeCardtitle{
+        color: #000;
+        font-weight: 600;
+        margin-bottom: 30px;
+        font-size: 64px;
+    }
+    .navbar{
+        padding: 17.5px 5px;  
+    }
+
+    .heroSection{
+        padding: 40px 16px;
+    }
+
+    .statCardBody{
+        padding:24px 16px;
+    }
+
+    .homeCardBtn{
+        padding: 16px 24px;
+    }
+    
+    .joinUsFormBtn{
+        padding: 6% 9.2%;
+    }
+
+    .infoCard{
+        padding: 80px 32px;
+    }
+
+    .infoCardBody{
+        margin-bottom: 24px;
+        margin-right: 32px;
+    }
+
+    .statCard{
+        padding: 40px 32px;
+    }
+    .joinUsSection{
+        padding: 40px;
+    }
+
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+    
+    .footerIcon{
+        margin-right: 10px;
+    }
+    
+    .joinUsSection{
+        padding: 80px 240px;
+    }
+    .processCardBody{
+        padding-right: 50px;
+    }
+    .joinUsFormBtn{
+        padding: 16px 300px;
+    }
+}
