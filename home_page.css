@@ -71,7 +71,7 @@ body{
     margin: 0px 16px;
 }
 
-.infoCardCircle{
+.infoCardIcon{
     margin-bottom: 24px;
 }
 
@@ -96,6 +96,17 @@ body{
     color: #fff;
 }
 
+.statHead{
+    color: #757474;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1rem;
+    margin: 40px 2.5px 24px;
+}
+
+.statBighead{
+    font-size: 2.07rem;
+}
 .statCardBody{
     background: #FFC5DE;
 }
@@ -103,6 +114,10 @@ body{
 .statCardCount{
     font-weight: 700;
     font-size: 1.44rem;
+}
+
+.statCardIcon{
+    margin-bottom: 30px;
 }
 
 .joinUsSection{
@@ -186,7 +201,9 @@ body{
     .infoCardBody{
         margin-bottom: 24px;
     }
-
+    .statBighead{
+        font-size: 1.6rem;
+    }
     .joinUsSection{
         padding: 40px;
     }
@@ -289,7 +306,7 @@ body{
         color: #000;
         font-weight: 600;
         margin-bottom: 30px;
-        font-size: 64px;
+        font-size: 4.29rem;
     }
     .navbar{
         padding: 17.5px 5px;  
