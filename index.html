@@ -16,11 +16,15 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap" rel="stylesheet">
+    <!-- JQUERY -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
 </head>
 <body>
     <!--navigation bar-->
-    <div class="container-fluid">
+    <div class="container-fluid titleIcon">
         <div class="navigation-bar">
             <nav class="navbar navbar-expand-lg navbar-light">
                 <a class="navbar-brand" href="#"><img src="titli_logo.svg"></a>
@@ -57,37 +61,122 @@
             </nav>
         </div>
     </div>
-    <!--heroSection-->
-    <div class="heroSection">
-        <div class="homeCard">            
-            <div class="homeCardbody">
-              <h5 class="homeCardtitle">#Maketheswitch</h5>
-              <p class="homeCardText">One cup at a time!</p>
-             <!-- <a href="#" class="btn homeCardBtn"><span class="cardBtnText">Learn More!</span></a>-->
+    <!--home page-->
+    <div class="homeSection">            
+        <div class="homeSectionbody">
+            <h1 class="homeSectionText">We donate sustainable period products to underprivileged menstruators.</h1>
+        </div>
+    </div>
+    <div class="problemSection">
+        <div class="problemSectionTitle">The Problem</div>
+        <div class="problemSectionComment">/taboo/</div>
+        <div class="problemSectionText">72% women don't have access to hygienic period products and due to this girls drop out of school due to taboo, and Titli aims to tackle this problem.</div>
+    </div>
+    <!--ground work gallery-->
+    <div class="groundworkGallery mb-3 p-0">
+        <div class="groundworkTitle">Groundwork Gallery</div>
+        <!-- DESKTOP VIEW -->
+        <div class="container d-none d-md-block">
+            <div class="row">
+                <div class="col-6 p-1" >
+                    <img src="1.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 p-1">
+                    <img src="6.jpg" alt="" class=" img-fluid rounded">
+                </div>
+            </div>
+            <div class="row mt-2">
+                <div class="col-6 p-1" >
+                    <img src="4.jpg" alt="" class="img-fluid rounded">
+                </div>
+                <div class="col-6 p-1">
+                    <img src="7.jpg" alt="" class="img-fluid rounded">
+                </div>
+            </div>
+        </div>
+        
+        <!-- mobile view -->
+        <div id="myCarousel" class="carousel slide d-md-none d-lg-none" data-ride="carousel" style='width:fit-content'>
+            <!-- Carousel indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+                <li data-target="#myCarousel" data-slide-to="3"></li>
+            </ol>   
+    
+            <!-- Wrapper for carousel items -->
+            <div class="carousel-inner" style="width:100%; margin:auto;">		
+                <div class="carousel-item active">
+                    <div class="img-box"><img src="./1.jpg" alt="" class="img-fluid"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-box"><img src="./6.jpg" alt="" class="img-fluid"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-box"><img src="./4.jpg" alt="" class="img-fluid"></div>
+                </div>
+                <div class="carousel-item">
+                    <div class="img-box"><img src="./7.jpg" alt="" class="img-fluid"></div>
+                </div>
             </div>
         </div>
     </div>
+
     <!--info Cards-->
     <div class="container infoCardsSection">
         <div class="row infoCard">
             <div class="col infoCardBody">
-                <img class="infoCardIcon" src="visionsvg.svg">
-                <h5 class="infoCardTitle">Our Vision</h5>
-                <p class="infoCardText">We hope to break the taboo around menstruation by promoting and educating the masses about menstrual health and hygiene, and donating menstrual cups, a more pocket-friendly and sustainable alternative to other sanitary products.</p>
+                <h5 class="infoCardTitle">Vision</h5>
+                <h5 class="infoCardsubTitle">Make sustainable menstruation products accessible to all </h5>
+                <p class="infoCardText">We here at Titli envisage a world where menstruation is no longer a taboo and sustainable menstrual products are easily accessible to all and Titli works tirelssly for the same.</p>
             </div>
             <div class="col infoCardBody">
-                <img class="infoCardIcon" src="missionsvg.svg">
-                <h5 class="infoCardTitle">Our Mission</h5>
-                <p class="infoCardText">Out of a total of 40 crore menstruating women in India, less than 20% use sanitary pads. We, at Titli Foundation, aspire to change this statistic, and help the underprivileged overcome the menstrual hurdles of inaccessibility, unaffordability, as well as lack of awareness and hygiene.</p>
-            </div>
-            <div class="col infoCardBody">
-                <img class="infoCardIcon" src="reachsvg.svg">
-                <h5 class="infoCardTitle">Our Reach</h5>
-                <p class="infoCardText">Rooted in Ayodhya, Titli Foundation has spread its wings with over 204 members across India, and having active groundwork teams host drives to donate menstrual cups and pads in Ayodhya, Lucknow, Pune, Mumbai, Delhi and Bangalore. Is your city on the list? Join us now, in the journey of #BreakingTheTaboo!</p>
+                <h5 class="infoCardTitle">Mission</h5>
+                <h5 class="infoCardsubTitle">Break the Taboo</h5>
+                <p class="infoCardText">Create awareness around menstrual hygiene, break generational taboos around it and promote sustainable practices through a change in menstrual habits.</p>
             </div>
         </div>
     </div>
-    <!--statistics Section-->
+    <!--period footprint-->
+    <div class="footprintSection">
+        <div class="footprintSectionTitle">Period Footprint</div>
+        <div class="footprintSectionText">Check out your period footprint by adjusting the slider below to indicate the number of years you have been menstruating and the amount of plastic waste that has potentially been generated over that time.</div>
+        <div class="footprintSlider">
+            <div><label for="startAge" class="footprintSectionText">At what age did you start menstruating?</label></div>
+            <input type="range" class="slider" min="8" max="17" value = "12" step="1" id="startAge">
+            <div id="startvalue"></div>
+            <div><label for="currentAge" class="footprintSectionText">How old are you now?</label></div>
+            <input type="range" class="slider" min={startvalue.value} max="100" step="1" value = "24" id="currentAge">
+            <div id="currentvalue"></div>
+            <div id="footprintSectionImg footprintSectionText"><img src="plasticbag.svg"></div>
+            <div class="footprintSectionText">By menstruating for <span id="totalYears"></span>, the average person contributes over <span id="footprintValue"></span> of plastic waste due to the use of unsustainable menstruation products.</div>
+        </div>
+
+    </div>
+    <script>
+        var startAge = document.getElementById("startAge");
+        startvalue.innerHTML = startAge.value+" years";
+        var currentAge = document.getElementById("currentAge");
+        currentvalue.innerHTML = currentAge.value+" years";
+        var totalYears = document.getElementById("totalYears");
+        totalYears.innerHTML = currentAge.value - startAge.value +" years"
+        var footprintValue = document.getElementById("footprintValue");
+        footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+
+        startAge.oninput=function(){
+            startvalue.innerHTML=this.value+" years";
+            totalYears.innerHTML = currentAge.value - startAge.value +" years";
+            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+        }
+
+        currentAge.oninput=function(){
+            currentvalue.innerHTML=this.value+" years";
+            totalYears.innerHTML = currentAge.value - startAge.value +" years";
+            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+        }
+    </script>
+    <!--statistics Section-
     <div class="container statisticsSection">
         <div class="statHead">Why you should<br> <span class="statBighead">#Maketheswitch</span></div>
         <div class="row statCard">
@@ -107,8 +196,8 @@
                 <p class="statCardText">Since menstrual cups collect, rather than absorbing blood, it prevents the risk of getting Toxic Shock Syndrome (TSS), which is usually caused by usage of super-absorbent tampons.</p>
             </div>
         </div>
-    </div>
-    <!--joinus section-->
+    </div>-->
+    <!--joinus section
     <div class="container joinUsSection">
         <div class="joinUsHead">Be a part of the Titli Family</div>
         <div class="joinUsText">Join us and be a part of the Titli family. All we are asking for is what you are comfortable giving. Your time or your donation can be the most generous contribution. Apart from this, you can also help us by interacting with us on social media. Simply by talking about a taboo, you too can help destigmatize it. That's a great start too! Help normalize something that is as natural as it gets.</div>
@@ -138,22 +227,21 @@
             </div>
         </div>
         <a href="https://forms.gle/gGH8esmevuwye78B6" target="_blank" class="btn joinUsFormBtn"><span class="cardBtnText">Fill Form</span></a>
-    </div>
+    </div>-->
     <!--Footer-->
     <div class="footer">
         <footer>
-            <div class="footerHead">Contact Us</div>
             <div class="footerBody container">
                 <div class="row footerBodyText">
-                    <h5 class="col-1 footerIcon"><i class="bi bi-envelope-fill"></i></h5> 
+                    <h5 class="col-1 footerIcon"><i class="bi bi-envelope"></i></h5> 
                     <span class="col-8">contact.titlifoundation@gmail.com</span>
                 </div>
                 <div class="row footerBodyText">
-                    <h5 class="col-1 footerIcon"><i class="bi bi-telephone-fill"></i></h5> 
+                    <h5 class="col-1 footerIcon"><i class="bi bi-telephone"></i></h5> 
                     <span class="col-8">+91 8604942501</span>
                 </div>
                 <div class="row footerBodyText">
-                    <h5 class="col-1 footerIcon"><i class="bi bi-geo-alt-fill"></i></h5> 
+                    <h5 class="col-1 footerIcon"><i class="bi bi-geo-alt"></i></h5> 
                     <span class="col-8">Pandey krishi kendra, Nirala nagar, khojanpur, Faizabad, Uttar pradesh. 224001</span>
                 </div>
             </div>

@@ -1,6 +1,8 @@
 body{
     font-family: 'Poppins';
     overflow-x: hidden !important;
+    background-color: #E5E5E5;
+    color: #000;
 }
 .container {
     max-width: 100% !important;
@@ -18,78 +20,131 @@ body{
     line-height: 0;
 }
 
-.heroSection{
-    background: #FFC5DE;
-    
+.homeSectionText{
+    font-weight: 600;
+    font-size: 2.375rem;
 }
 
-.homeCard{
-    background: #fff;
-}
-
-.homeCardtitle{
-    color: #757474;
+.problemSectionTitle{
     font-weight: 700;
-    font-size: 1.44rem;
-    line-height: 2rem;
-    margin-bottom: 16px;
-    
+    font-size: 1.312rem;
 }
 
-.homeCardText{
-    margin-bottom: 24px;
+.problemSectionComment{
+    font-weight: 700;
+    color: #880808;
+    font-style: italic;
+    font-size: 1rem;
 }
 
-.homeCardbody{
-    color: #302E2E;
-    font-weight: 300;
-    font-size: 1.2rem;
-   
-}
-
-.homeCardBtn{
-    background: #FFC5DE;
+.problemSectionText{
     font-weight: 400;
     font-size: 1rem;
-    
 }
 
+.groundworkTitle, .footprintSectionTitle{
+    font-weight: 700;
+    font-size: 1.312rem;
+    text-align: center;
+}
+
+.carousel {
+	width: 100%;
+	margin: 0 auto;
+	padding-bottom: 50px;
+}
+.carousel .carousel-item {
+	color: #999;
+	font-size: 14px;
+	text-align: center;
+	overflow: hidden;
+}
+.carousel-control-prev, .carousel-control-next {
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background: #999;
+	text-shadow: none;
+	top: 4px;
+}
+.carousel-control-prev i, .carousel-control-next i {
+	font-size: 20px;
+	margin-right: 2px;
+}
+.carousel-control-prev {
+	left: auto;
+	right: 40px;
+}
+.carousel-control-next i {
+	margin-right: -2px;
+}
+.carousel .carousel-indicators {
+	bottom: 15px;
+}
+.carousel-indicators li, .carousel-indicators li.active {
+	width: 11px;
+	height: 11px;
+	margin: 1px 5px;
+	border-radius: 50%;
+}
+.carousel-indicators li {	
+	background: #D9D9D9;
+	border: none;
+}
+.carousel-indicators li.active {		
+	background: #FFC5DE;		
+}
+
+/*
 .joinUsFormBtn{
     background-color: #FFC5DE;
     font-weight: 700;
     font-size: 1rem;
 }
-
+*/
 
 .infoCardsSection{
     text-align: center;
-    background: #E5E5E5;
-    padding: 0;
-}
-
-.infoCard{
-    margin: 0px 16px;
-}
-
-.infoCardIcon{
-    margin-bottom: 24px;
 }
 
 .infoCardBody{
     background: #fff;
-    padding: 24px 16px;
 }
 
 .infoCardTitle, .statCardText{
     font-weight: 700;
-    font-size: 1.2rem;
+    font-size: 1.750rem;
+    margin-bottom: 8px;
 }
 
-.infoCardText{
-    font-weight: 300;
+.infoCardsubTitle{
+    font-weight: 700;
+    font-size: 1.312rem;
+    color: #F084B6;
+    margin-bottom: 8px;
+}
+
+.infoCardText, .footprintSectionText{
+    font-weight: 400;
     font-size: 1rem;
+    text-align: center;
 }
 
+.footprintSlider{
+    text-align: center;
+}
+
+#startvalue, #currentvalue{
+    margin-bottom: 24px;
+    font-weight: 700;
+    font-size: 0.750rem;
+}
+
+#totalYears{
+    font-weight: 700;
+}
+
+/*
 .statisticsSection{
     background: #FFC5DE;
     text-align: center;
@@ -158,48 +213,93 @@ body{
     font-weight: 400;
     font-size: 1rem;
 }
-
+*/
 .footer{
-    background-color: #757474;
+    background-color: #fff;
     padding: 17px;   
-}
-
-.footerHead{
-    color: #fff;
-    font-weight: 700;
-    font-size: 1rem;
-    margin-bottom: 16px;
+    margin: 0 !important;
 }
 
 .footerBody{
     font-size: 0.833rem;
     font-weight: 400;
-    color: #FFC5DE;
+    color: #000;
     padding: 2px;
 }
 
-
+/*MOBILE VIEW-1*/
 @media (max-width: 320px){
+    body{
+        margin: 10px;
+    }
+
+    .titleIcon{
+        padding: 0;
+    }
+
     .navbar{
-        padding: 17.5px 5px;  
+        padding: 17.5px 0px;  
     }
 
-    .heroSection{
-        padding: 40px 16px;
+    .homeSection{
+        margin-top: 20px;
+        margin-bottom: 24px;
     }
 
+    .homeSectionText{
+        font-weight: 600;
+        font-size: 1.750rem;
+    }
+
+    .problemSectionTitle{
+        margin-bottom: 12px;
+    }
+    
+    .problemSectionComment{
+        margin-bottom: 8px;
+    }
+    
+    .problemSection{
+        margin-bottom: 24px;
+    }
+
+    .groundworkTitle, .footprintSectionTitle{
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+   
+    .infoCardsSection{
+        padding: 0px;
+    }
+    
+    .infoCardBody{
+        margin-bottom: 16px;
+        padding: 24px;
+    }
+    
+    .slider{
+        width: 100%;
+    }
+
+    .footprintSectionText{
+        margin-bottom: 16px;
+    }
+
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+
+    
+    .footerIcon{
+        margin-right: 10px;
+    }
+      
+/*
     .homeCardbody, .statCardBody{
         padding:24px 16px;
     }
     .homeCardBtn, .joinUsFormBtn{
         padding: 6% 9.2%;
-    }
-
-    .infoCard{
-        padding-top: 48px;
-    }
-    .infoCardBody{
-        margin-bottom: 24px;
     }
     .statBighead{
         font-size: 1.6rem;
@@ -207,37 +307,72 @@ body{
     .joinUsSection{
         padding: 40px;
     }
+*/
+
+    
+}
+
+/*MOBILE VIEW-2*/
+@media (min-width: 321px) and (max-width: 376px){
+    .navbar{
+        padding: 17.5px 0px;  
+    }
+
+    .titleIcon{
+        padding: 0;
+    }
+
+    body{
+        margin: 0px 16px;
+    }
+
+    .homeSection{
+        margin-top: 20px;
+        margin-bottom: 40px;
+    }
+
+    .problemSectionTitle{
+        margin-bottom: 12px;
+    }
+    
+    .problemSectionComment{
+        margin-bottom: 8px;
+    }
+    
+    .problemSection{
+        margin-bottom: 24px;
+    }
+
+    .groundworkTitle, .footprintSectionTitle{
+        margin-bottom: 16px;
+    }
+
+    .infoCardsSection{
+        padding: 0px;
+    }
+    
+    .infoCardBody{
+        margin: 0px 24px 24px 10px;
+        padding: 24px;
+    }
+    
+    .slider{
+        width: 70%;
+    }
+
+    .footprintSectionText{
+        margin-bottom: 24px;
+    }
 
     .footerBodyText{
         margin-bottom: 16px;
     }
+
     
     .footerIcon{
         margin-right: 10px;
     }
-    
-}
-
-@media (min-width: 321px) and (max-width: 376px){
-    .navbar{
-        padding: 17.5px 5px;  
-    }
-    .heroSection{
-        padding: 40px 16px;
-    }
-    .homeCardbody, .statCardBody{
-        padding:24px 16px;
-    }
-    
-    .homeCardBtn, .joinUsFormBtn{
-        padding: 6% 9.2%;
-    }
-    .infoCard{
-        padding-top: 48px;
-    }
-    .infoCardBody{
-        margin: 0px 2px 24px;
-    }
+    /*
     .statCardBody{
         margin: 0px 10px 24px;
     }
@@ -245,23 +380,74 @@ body{
     .joinUsSection{
         padding: 40px;
     }
+    .homeCardBtn, .joinUsFormBtn{
+        padding: 6% 9.2%;
+    }
+
+    .homeCardbody, .statCardBody{
+        padding:24px 16px;
+    }*/
     
+   
+}
+
+/*MOBILE VIEW-3*/
+
+@media (min-width: 376px) and (max-width: 668px){
+    body{
+        margin: 0px 32px;
+    }
+
+    .navbar{
+        padding: 17.5px 0px;  
+    }
+
+    .titleIcon{
+        padding: 0;
+    }
+
+    .homeSection{
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+    .problemSectionTitle{
+        margin-bottom: 12px;
+    }
+    
+    .problemSectionComment{
+        margin-bottom: 8px;
+    }
+    
+    .problemSection{
+        margin-bottom: 24px;
+    }
+
+    .groundworkTitle, .footprintSectionTitle{
+        margin-bottom: 16px;
+    }
+
+    .infoCardsSection{
+        padding: 0px;
+    }
+    
+    .infoCardBody{
+        margin: 0px 24px 24px 10px;
+        padding: 24px;
+    }
+    
+    .slider{
+        width: 50%;
+    }
+
+    .footprintSectionText{
+        margin-bottom: 24px;
+    }
+
     .footerBodyText{
         margin-bottom: 16px;
     }
-    
-    .footerIcon{
-        margin-right: 10px;
-    }
-}
 
-@media (min-width: 376px) and (max-width: 668px){
-    .navbar{
-        padding: 8px;  
-    }
-    .heroSection{
-        padding: 40px 16px;
-    }
+    /*
     .homeCardbody, .statCardBody{
         padding:24px 16px;
     }
@@ -269,17 +455,7 @@ body{
     .homeCardBtn, .joinUsFormBtn{
         padding: 2.6% 3.9%;
     }
-    
-    .infoCard{
-   
-        padding-top: 48px;
-        
-        margin-right: 0px;
-    }
-    .infoCardBody{
-        margin: 0px 24px 24px 10px;
-        padding: 24px;
-    }
+
     .statCardBody{
         margin: 40px 24px 24px 10px;
         padding: 40px;
@@ -287,35 +463,65 @@ body{
 
     .joinUsSection{
         padding: 40px;
-    }
+    }*/
     
-    .footerBodyText{
-        margin-bottom: 16px;
-    }
     
-    .footerIcon{
-        margin-right: 10px;
-    }
 }
 
+/*  DESKTOP VIEW */
 @media (min-width: 668px){
-    .homeCardbody{
-        padding: 54px 16px;
+    body{
+        margin-left: 142px;
+        margin-right: 142px;
     }
-    .homeCardtitle{
-        color: #000;
-        font-weight: 600;
-        margin-bottom: 30px;
-        font-size: 4.29rem;
+    .homeSection{
+        margin-top: 84px;
+    }
+
+    .homeSectionText{
+        margin-bottom: 24px;
     }
     .navbar{
         padding: 17.5px 5px;  
     }
-
-    .heroSection{
-        padding: 40px 16px;
+    .problemSectionTitle{
+        margin-bottom: 12px;
+    }
+    
+    .problemSectionComment{
+        margin-bottom: 8px;
+    }
+    
+    .problemSection{
+        margin-bottom: 80px;
     }
 
+    .groundworkTitle, .footprintSectionTitle{
+        margin-bottom: 24px;
+    }
+
+    .infoCard{
+        margin-bottom: 80px;
+    }
+
+    .infoCardBody{
+        margin-right: 20px;
+        padding: 52px 16px;
+    }
+
+    .slider{
+        width: 30%;
+    }
+
+    .footprintSectionText{
+        margin-bottom: 24px;
+    }
+
+    .footerBodyText{
+        margin-bottom: 16px;
+    }
+    
+    /*
     .statCardBody{
         padding:24px 16px;
     }
@@ -327,31 +533,13 @@ body{
     .joinUsFormBtn{
         padding: 6% 9.2%;
     }
-
-    .infoCard{
-        padding: 80px 32px;
-    }
-
-    .infoCardBody{
-        margin-bottom: 24px;
-        margin-right: 32px;
-    }
-
+    
     .statCard{
         padding: 40px 32px;
     }
     .joinUsSection{
         padding: 40px;
     }
-
-    .footerBodyText{
-        margin-bottom: 16px;
-    }
-    
-    .footerIcon{
-        margin-right: 10px;
-    }
-    
     .joinUsSection{
         padding: 80px 240px;
     }
@@ -361,4 +549,5 @@ body{
     .joinUsFormBtn{
         padding: 16px 300px;
     }
+    */
 }
