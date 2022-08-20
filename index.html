@@ -150,7 +150,7 @@
             <input type="range" class="slider" min={startvalue.value} max="100" step="1" value = "24" id="currentAge">
             <div id="currentvalue"></div>
             <div id="footprintSectionImg footprintSectionText"><img src="plasticbag.svg"></div>
-            <div class="footprintSectionText">By menstruating for <span id="totalYears"></span>, the average person contributes over <span id="footprintValue"></span> of plastic waste due to the use of unsustainable menstruation products.</div>
+            <div class="footprintSectionText">By menstruating for <span id="totalYears"></span>, the average person contributes to the equivalent of <span id="footprintValue"></span>of plastic due to the use of unsustainable menstruation products.</div>
         </div>
 
     </div>
@@ -162,18 +162,18 @@
         var totalYears = document.getElementById("totalYears");
         totalYears.innerHTML = currentAge.value - startAge.value +" years"
         var footprintValue = document.getElementById("footprintValue");
-        footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+        footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 1200 + " bags ";
 
         startAge.oninput=function(){
             startvalue.innerHTML=this.value+" years";
             totalYears.innerHTML = currentAge.value - startAge.value +" years";
-            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 1200+ " bags ";
         }
 
         currentAge.oninput=function(){
             currentvalue.innerHTML=this.value+" years";
             totalYears.innerHTML = currentAge.value - startAge.value +" years";
-            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 120/1000 +" kg's";
+            footprintValue.innerHTML = Number(totalYears.innerHTML.split(" ")[0]) * 1200+ " bags ";
         }
     </script>
     <!--statistics Section-

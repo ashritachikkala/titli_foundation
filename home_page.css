@@ -140,7 +140,7 @@ body{
     font-size: 0.750rem;
 }
 
-#totalYears{
+#totalYears, #footprintValue{
     font-weight: 700;
 }
 
