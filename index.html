@@ -245,7 +245,7 @@
                     <div class="" style="padding: 0px 50px;">
                         By menstruating for <b> <span class="menstruatingYears"></span> years </b> , the average person
                         contributes over <b> <span class='tonesOfPlastic'></span>
-                            tonnes</b> of plastic waste.
+                            bags</b> of plastic.
                     </div>
                 </div>
             </div>
@@ -335,7 +335,7 @@
             current_age = parseInt(this.value)
             document.getElementsByClassName('CA_Reading')[0].innerHTML = current_age;
             var plasticWastedInKGs = (current_age - first_period) * (cycle_length * 60 * 4);
-            current_age > first_period ? mensturationYears = current_age - first_period : alert("First Period should not be higher than your current age");
+            current_age > first_period ? mensturationYears = current_age - first_period : alert("First Period should be less than your current age");
             document.getElementsByClassName("menstruatingYears")[0].innerHTML = mensturationYears;
             document.getElementsByClassName("tonesOfPlastic")[0].innerHTML = plasticWastedInKGs;
         }
@@ -344,7 +344,7 @@
             first_period = parseInt(this.value)
             document.getElementsByClassName('FP_Reading')[0].innerHTML = first_period;
             var plasticWastedInKGs = (current_age - first_period) * (cycle_length * 60 * 4);
-            current_age > first_period ? mensturationYears = current_age - first_period : alert("First Period should not be higher than your current age");
+            current_age > first_period ? mensturationYears = current_age - first_period : alert("First Period should be less than your current age");
             document.getElementsByClassName("menstruatingYears")[0].innerHTML = mensturationYears;
             document.getElementsByClassName("tonesOfPlastic")[0].innerHTML = plasticWastedInKGs;
         }
