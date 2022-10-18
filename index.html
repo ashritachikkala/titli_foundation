@@ -32,6 +32,35 @@
 </head>
 
 <body>
+    <!--navigation bar-->
+    <div class="container-fluid">
+        <div class="navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="titli_logo.svg"></a>
+                <button class="btn btn-sm joinUs align-middle ml-auto mr-3 order-lg-last" type="button">
+                    <a href="https://forms.gle/gGH8esmevuwye78B6">
+                        Join Us
+                    </a></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--list icon--><h1 class="navbarIcon"><i class="bi bi-list"></i></h1>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#mainContent">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./sustainableProducts.html">Sustainable Products</a>
+                        </li>
+                    </ul>  
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!--
     <div class=" container">
         <div class="navBar row mt-4">
             <div class="logo col mt-0 align-self-center" style="height: 100%;">
@@ -55,19 +84,19 @@
                         <a href="./sustainableProducts.html">Sustainable Products</a>
                     </li>
                     <li class="joinUs mt-0">
-                        <!-- <div class="joinUs"> -->
+                        <div class="joinUs"> 
                         <a href="https://forms.gle/gGH8esmevuwye78B6">
                             Join Us
                         </a>
-                        <!-- </div> -->
+                        </div> 
                     </li>
                 </ul>
             </div>
         </div>
-    </div>
+    </div>-->
 
     <br>
-    <div class="section1 banner d-flex align-items-center" style="background: url('landings1.png'); width: 100%;
+    <div class="section1 banner d-flex align-items-center img-fluid" style="background: url('landings1.png'); width: 100%; height: auto; 
     background-size:cover;
     min-height:90vh">
 
@@ -195,8 +224,6 @@
             </div>
         </div>
 
-
-
         <div class="row" style="min-height: 500px;">
             <div class="col-7">
                 <div class="row justify-content-center" style="height: 100%;">
@@ -225,7 +252,7 @@
                     <!-- Cycle Length -->
                     <div class="col-3 d-flex flex-column align-items-stretch justify-content-center"
                         style="height: 100%;">
-                        <div class=" colName" style="text-align: center;">Cycle Length</div>
+                        <div class="colName" style="text-align: center;">Cycle Length</div>
                         <div class="rangeSlider justify-content-center">
                             <input type="range" min="1" max="10" step="1" value='5' orient="vertical" id='cycleLength'
                                 name="cycleLength" class="p-0 slider" />
@@ -251,8 +278,45 @@
             </div>
         </div>
     </div>
-
-    <!-- footer -->
+    <!--Footer-->
+    <div class="footer">
+        <footer>
+            <div class="footerBody container">
+                <div class="followUs">
+                    Follow Us
+                </div>
+                <div class="socialMediaLinks row">
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a></h5>
+                </div>
+                <div class="footerBodyDetails">
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-envelope"></i></h5> 
+                        <span class="col-8">contact.titlifoundation@gmail.com</span>
+                    </div>
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-telephone"></i></h5> 
+                        <span class="col-8">+91 8604942501</span>
+                    </div>
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-geo-alt"></i></h5> 
+                        <span class="col-8">Pandey krishi kendra, Nirala nagar, khojanpur, Faizabad, Uttar pradesh. 224001</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    <!--
+     footer 
     <footer>
         <div class="footerContext p-3 d-flex flex-column align-items-stretch">
             <div class="followUs">
@@ -314,6 +378,7 @@
             </div>
         </div>
     </footer>
+-->
 
     <script>
         var CA = document.getElementById('currentAge')//A
