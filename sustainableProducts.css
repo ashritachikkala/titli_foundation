@@ -2,7 +2,12 @@
 body
 {
     background: linear-gradient(192.66deg, #FFE0E0 -24.48%, #F3F3F3 105.28%);
-
+    font-family: 'Poppins';
+    overflow-x: hidden !important;
+}
+.container {
+    max-width: 100% !important;
+    overflow-x: hidden !important;
 }
 
 li
@@ -15,21 +20,54 @@ a
     color: black;
     text-decoration: none;
 }
+
+
+.navbar-toggler{
+    border: 0px;
+    padding: 0px;
+}
+
+.navbarIcon{
+    color: black;
+    margin-top: 0.5rem;
+    line-height: 0;
+}
+
+.nav-item {
+    padding: 16px;
+    color: black;
+    font-weight: 700;
+    margin-right: 16px;
+    margin-top: 16px;
+}
+
+.joinUs
+{
+    
+    background-color: white;
+    border: 1px solid #F084B6;
+    margin: 16px;
+    padding: 16px;
+}
+.joinUs a
+{
+    font-family: 'Poppins', sans-serif;
+    font-weight:700;
+    color: #F084B6;
+    text-decoration: none;
+}
+
 .SustainableProducts
 {
     font-family: 'Poppins';
     font-size: 28px;
     font-weight: 700;
-    line-height: 42px;
-    letter-spacing: 0em;
 }
 .intro
 {
     font-family: 'Poppins';
-font-size: 24px;
-font-weight: 500;
-line-height: 36px;
-letter-spacing: 0em;
+    font-size: 24px;
+    font-weight: 500;
 }
 .productsAndDetails
 {
@@ -38,21 +76,17 @@ letter-spacing: 0em;
 }
 .productName
 {
-font-family: 'Poppins';
-font-size: 24px;
-font-weight: 700;
-line-height: 36px;
-letter-spacing: 0em;
-text-align: left;
+    font-family: 'Poppins';
+    font-size: 24px;
+    font-weight: 700;
+    text-align: left;
 }
 .productDetails
 {
     font-family: 'Poppins';
-font-size: 21px;
-font-weight: 500;
-line-height: 32px;
-letter-spacing: 0em;
-text-align: left;
+    font-size: 21px;
+    font-weight: 500;
+    text-align: left;
 }
 
 footer{
@@ -96,4 +130,126 @@ footer{
     font-weight: 700;
     text-decoration: underline;
     font-size: medium;
+}
+footer{
+    width: 100%;
+    background: white;
+    border-top: 2px #000000 solid;
+}
+.followUs
+{
+    font-family: 'Poppins';
+    font-weight: 700;
+    font-size: 1rem;
+    padding-top: 16px;
+}
+.socialMediaLinks
+{
+    padding-top: 25px;
+    width: 50%;
+}
+.socialMediaLinks .icon
+{
+    cursor: pointer;
+    
+}
+
+.footerBodyDetails{
+    padding-top: 16px;
+}
+
+.footerBodyText{
+    padding: 2px;
+    font-weight: 700;
+    text-decoration: underline;
+    font-size: 0.750rem;
+}
+@media (max-width: 320px){
+
+}
+
+/*MOBILE VIEW-2*/
+@media (min-width: 321px) and (max-width: 376px){
+    .joinUs{
+        padding: 8px 16px;
+        margin-left: auto;
+    }
+    .navbar{
+        justify-content: unset;
+    }
+    .navbar-brand img{
+        width: 160px;
+    }
+    .intro{
+        font-size: 16px;
+    }
+    .socialMediaLinks .icon
+    {
+        cursor: pointer;
+        margin-right: 5px;   
+    }
+}
+@media (min-width: 376px) and (max-width: 668px){
+    .joinUs{
+        margin-left: auto;
+        padding: 10px 16px;
+    }
+    .navbar-brand img{
+        width: 160px;
+    }
+    .navbar{
+        justify-content: unset;
+    }
+    .intro{
+        font-size: 16px;
+        text-align: center;
+    }
+
+    .sustain{
+        margin: 16px;
+    }
+
+    .SustainableProducts{
+        text-align: center;
+    }
+
+    .productImg{
+        width: 45%;
+        height: auto;
+        padding: 0px;
+    }
+    .productName{
+        font-size: 21px;
+        padding: 0px;
+        width: 100%;
+    }
+
+    .productDetails{
+        font-size: 16px;
+        padding: 0px;
+        width: 100%;
+    }
+    .socialMediaLinks .icon
+    {
+        cursor: pointer;
+        margin-right: 5px;   
+    }
+}
+/*  DESKTOP VIEW */
+@media (min-width: 668px){
+    .navbar{
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .SustainableProducts,.intro{
+        margin: 0px 50px;
+    }
+    .footerBody{
+        padding: 0px 50px;
+    }
+    .navbar-brand img{
+        width: 200px;
+    }
+    
 }
