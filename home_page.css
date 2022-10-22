@@ -45,9 +45,14 @@ h6{
 {
     margin-top: 40px;
 }
-.section1
+.section1d
 {
     min-height: 90vh;
+    color: white;
+}
+.section1m
+{
+    /* min-height: 90vh; */
     color: white;
 }
 .logoimg
@@ -110,7 +115,15 @@ color: #F084B6;
     background-size:cover;
     border:1px black solid;
 }
-
+.banner1
+{
+    width: 100%;
+    position: relative;
+    background: url('landings1.png');
+    background-size:cover;
+    background-position: center;
+    border:1px black solid;
+}
 .sectionOneHead
 {
     color: white;
@@ -302,9 +315,6 @@ footer{
     font-size: 0.750rem;
 }
 
-@media (max-width: 320px){
-
-}
 
 /*MOBILE VIEW-2*/
 @media (min-width: 321px) and (max-width: 376px){
