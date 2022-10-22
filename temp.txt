@@ -1,0 +1,9 @@
+<div class="d-md-none banner1">
+            <div class="bannerContent">
+                <div class="bannerContent">
+                        Periods.<br>
+                        <div class="sectionOneText">Let's cut through the noise and just say the word.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
