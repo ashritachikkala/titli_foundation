@@ -15,8 +15,25 @@ li
     list-style-type: none;
     text-decoration: none;
 }
+<<<<<<< HEAD
 
 .image
+=======
+a
+{
+    color: black;
+    text-decoration: none;
+}
+.image1
+{
+    min-height: 100vh;
+    max-height: 100vh;
+    overflow-y: hidden;
+    background: url('aboutUsImage1.png');
+    background-size: cover;
+}
+.image2
+>>>>>>> main
 {
     overflow-y: hidden;
 }
