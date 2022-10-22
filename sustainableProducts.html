@@ -1,220 +1,203 @@
 <!doctype html>
 <html lang="en">
 
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-    <link rel="stylesheet" href="sustainableProducts.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Titli Foundation|Sustainable Products</title>
+        <!--Bootstrap links-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+            crossorigin="anonymous"></script>
+    
+        <!--Bootstrap icons-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+        <!--Css external link-->
+        <link rel="stylesheet" href="sustainableProducts.css">
+        <!--Google font link-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,700&display=swap"
+            rel="stylesheet">
+    
+        <!-- JQUERY -->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    
+    </head> 
 
 <body>
-    <div class="container">
-        <!-- navbar -->
-        <div class="navBar row mt-4 mb-3">
-            <div class="logo col mt-0 align-self-center" style="height: 100%;">
-                <div style="width: 200px;height:40px;">
-                    <img src="titli_logo.png" alt="logo" class="img-fluid">
+    <!--navigation bar-->
+    <div class="container-fluid">
+        <div class="navigation-bar">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="#"><img src="titli_logo.svg"></a>
+                <button class="btn joinUs order-lg-last" type="button">
+                    <a href="https://forms.gle/gGH8esmevuwye78B6">
+                        Join Us
+                    </a></button>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <!--list icon--><h1 class="navbarIcon"><i class="bi bi-list"></i></h1>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AboutUs.html">About Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./sustainableProducts.html">Sustainable Products</a>
+                        </li>
+                    </ul>  
                 </div>
-            </div>
-            <div class="links col p-0">
-                <ul class="d-flex mb-0 p-0 justify-content-between align-items-center">
-                    <li>
-                        <a href="./index.html"> 
-                            Home</a>
-                    </li>
-                    <li>
-                        <a href="./AboutUs.html">About Us</a>
-                    </li>
-                    <li>
-                        <a href="#pageContent">
-                            <b>
-                                Sustainable Products
-                            </b>
-                            </a>
-                    </li>
-                    <li class="joinUs mt-0" style="margin-top:24px;
-                    padding: 17px 32px;
-                    background-color: white;
-                    border: 1px solid #F084B6;">
-                        <!-- <div class="joinUs"> -->
-                        <a href="https://forms.gle/gGH8esmevuwye78B6" style="font-family: 'Poppins', sans-serif;
-                        font-weight:700;
-                        color: #F084B6;
-                        text-decoration: none;">
-                            Join Us
-                        </a>
-                        <!-- </div> -->
-                    </li>
-                </ul>
-            </div>
-        </div>
-
-        <!-- pageContent -->
-        <div class="pageContent" id='pageContent'>
-            <h1 class="SustainableProducts">Sustainable Products</h1>
-            <p class="intro">Switching to sustainable menstrual products can seem a bit daunting and confusing with all
-                the
-                information out there today. </p>
-            <p class="intro">So we’ve listed down some products for you to use based on what works best for you.</p>
-            <div class="productsAndDetails">
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <img src="menstrualCups.png" alt="menstraulCups" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <div>
-                            <h1 class="productName">Menstraul Cups</h1>
-                            <p class="productDetails">The menstrual cup is a funnel-shaped device that is inserted into
-                                the vagina for collecting period blood.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col">
-                        <div>
-                            <h1 class="productName">
-                                Menstrual Disk
-                            </h1>
-                            <p class="productDetails">
-                                Similar to the cup, a disk is an insertable device that collects menstrual blood and can
-                                be removed and reused. But unlike cups, a disk depends on the bodily anatomy to stay in
-                                place instead of suction.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <img src="menstrualDisk.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col-3">
-                        <img src="bioDegradablePads.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <div>
-                            <h1 class="productName">
-                                Biodegradable Pads
-                            </h1>
-                            <p class="productDetails">
-                                Similar to the cup, a disk is an insertable device that collects menstrual blood and can
-                                be removed and reused. But unlike cups, a disk depends on the bodily anatomy to stay in
-                                place instead of suction.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row mt-5">
-                    <div class="col">
-                        <div>
-                            <h1 class="productName">
-                                Cloth Pads
-                            </h1>
-                            <p class="productDetails">
-                                Cloth pads are a sustainable alternative to plastic-based pads. Cloth pads can be
-                                washed, dried in the sun and reused.
-
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-3">
-                        <img src="clothPads.png" alt="" class="img-fluid">
-                    </div>
-                </div>
-
-                <div class="row mt-5 mb-5">
-                    <div class="col-3">
-                        <img src="periodPanties.png" alt="" class="img-fluid">
-                    </div>
-                    <div class="col">
-                        <div>
-                            <h1 class="productName">
-                                Period Panties
-                            </h1>
-                            <p class="productDetails">
-                                Cloth pads are a sustainable alternative to plastic-based pads. Cloth pads can be
-                                washed, dried in the sun and reused.
-
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
+            </nav>
         </div>
     </div>
+        <!-- pageContent -->
+        <div class="pageContent" id='pageContent'>
+            <div class="sustain">
+                <div class="SustainableProducts mt-3 mb-2">Sustainable Products</div>
+                <p class="intro mb-4">Switching to sustainable menstrual products can seem a bit daunting and confusing with all
+                    the
+                    information out there today. </p>
+                <p class="intro">So we’ve listed down some products for you to use based on what works best for you.</p>
+                <div class="productsAndDetails">
+                    <div class="row mt-5">
+                        <div class="col-3 productImg">
+                            <img src="menstrualCups.png" alt="menstraulCups" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <div>
+                                <h1 class="productName">Menstrual Cups</h1>
+                                <p class="productDetails">The menstrual cup is a funnel-shaped device that is inserted into
+                                    the vagina for collecting period blood.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <!-- footer -->
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div>
+                                <h1 class="productName">
+                                    Menstrual Disk
+                                </h1>
+                                <p class="productDetails">
+                                    Similar to the cup, a disk is an insertable device that collects menstrual blood and can
+                                    be removed and reused. But unlike cups, a disk depends on the bodily anatomy to stay in
+                                    place instead of suction.
 
-    <footer>
-        <div class="footerContext p-3 d-flex flex-column align-items-stretch">
-            <div class="followUs">
-                Follow Us
-            </div>
-            <div class="socialMediaLinks row mt-2">
-                <div class="icon col">
-                    <a href="#">
-                        <img src="instagram.png" alt="">
-                    </a>
-                </div>
-                <div class="icon col">
-                    <a href="#">
-                        <img src="linkedin.png" alt="">
-                    </a>
-                </div>
-                <div class="icon col">
-                    <a href="#">
-                        <img src="facebook.png" alt="">
-                    </a>
-                </div>
-                <div class="icon col">
-                    <a href="#">
-                        <img src="twitter.png" alt="">
-                    </a>
-                </div>
-            </div>
-            <div class="otherDetails mt-2">
-                <div class="mail row mt-1">
-                    <div class="mailIcon col-1">
-                        <img src="mail.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-3 productImg">
+                            <img src="menstrualDisk.svg" alt="" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="mailAddress col">
-                        <p> <a href="mailto:contact.titlifoundation@gmail.com">
-                                contact.titlifoundation@gmail.com
-                            </a> </p>
+
+                    <div class="row mt-5">
+                        <div class="col-3 productImg">
+                            <img src="bioDegradablePads.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <div>
+                                <h1 class="productName">
+                                    Biodegradable Pads
+                                </h1>
+                                <p class="productDetails">
+                                    Similar to the cup, a disk is an insertable device that collects menstrual blood and can
+                                    be removed and reused. But unlike cups, a disk depends on the bodily anatomy to stay in
+                                    place instead of suction.
+
+                                </p>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="phone row mt-1">
-                    <div class="phoneIcon col-1">
-                        <img src="phone.png" alt="">
+
+                    <div class="row mt-5">
+                        <div class="col">
+                            <div>
+                                <h1 class="productName">
+                                    Cloth Pads
+                                </h1>
+                                <p class="productDetails">
+                                    Cloth pads are a sustainable alternative to plastic-based pads. Cloth pads can be
+                                    washed, dried in the sun and reused.
+
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col-3 productImg">
+                            <img src="clothPads.png" alt="" class="img-fluid">
+                        </div>
                     </div>
-                    <div class="phoneNumber col">
-                        <p><a href="tel:+91 8604942501">
-                                +91 8604942501
-                            </a></p>
-                    </div>
-                </div>
-                <div class="location row mt-1">
-                    <div class="locationMarkIcon col-1">
-                        <img src="locationMark.png" alt="">
-                    </div>
-                    <div class="location col">
-                        Pandey krishi kendra, Nirala nagar,
-                        khojanpur, Faizabad, Uttar pradesh.
-                        224001
+
+                    <div class="row mt-5 mb-5">
+                        <div class="col-3 productImg">
+                            <img src="periodPanties.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="col">
+                            <div>
+                                <h1 class="productName">
+                                    Period Panties
+                                </h1>
+                                <p class="productDetails">
+                                    Cloth pads are a sustainable alternative to plastic-based pads. Cloth pads can be
+                                    washed, dried in the sun and reused.
+
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </footer>
+    <!-- footer -->
+
+    <div class="footer">
+        <footer>
+            <div class="footerBody container">
+                <div class="followUs">
+                    Follow Us
+                </div>
+                <div class="socialMediaLinks row">
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-instagram"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-linkedin"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-facebook"></i>
+                    </a></h5>
+                    <h5 class="icon col-1"><a href="#">
+                        <i class="bi bi-twitter"></i>
+                    </a></h5>
+                </div>
+                <div class="footerBodyDetails">
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-envelope"></i></h5> 
+                        <span class="col-8">contact.titlifoundation@gmail.com</span>
+                    </div>
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-telephone"></i></h5> 
+                        <span class="col-8">+91 8604942501</span>
+                    </div>
+                    <div class="row footerBodyText">
+                        <h5 class="col-1 footerIcon"><i class="bi bi-geo-alt"></i></h5> 
+                        <span class="col-8">Pandey krishi kendra, Nirala nagar, khojanpur, Faizabad, Uttar pradesh. 224001</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
