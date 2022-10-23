@@ -147,8 +147,8 @@ color: #F084B6;
 }
 .bannerContent{
     font-weight: 700;
-    color: white;
     font-size: 3.188rem;
+    color: white;
     padding: 50px;
 }
 
@@ -441,6 +441,7 @@ footer{
         font-weight: 400;
         font-size: 16px;
     }
+
     .socialMediaLinks .icon
     {
         cursor: pointer;
@@ -581,6 +582,7 @@ footer{
         font-weight: 400;
         font-size: 16px;
     }
+
     .socialMediaLinks .icon
     {
         cursor: pointer;
@@ -601,6 +603,9 @@ footer{
         width: 200px;
     }
 
+    .bannerContent{
+        font-size: 96px;
+    }
     .footerBody{
         padding: 0px 50px;
     }
