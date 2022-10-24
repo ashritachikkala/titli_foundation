@@ -29,6 +29,15 @@
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
 
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
 </head>
 
 <body>
@@ -171,47 +180,38 @@
         </button>
     </div>
     <!-- SECTION4 -->
-    <!-- <div class="section4 container d-flex align-items-center ">
-        <div class="content">
-            <div class="hedding d-flex justify-content-center mb-3">
-                Groundwork Gallery
-            </div>
-            <div class="gallery row">
-                <div class="work col">
-                    <div class="workImage">
-                        <img src="1.jpg" alt="work" class="img-fluid">
-                    </div>
-                    <div class="context mt-4">
-                        <span class="pinkText">3. Back to Basics</span>
-                        <br>
-                        Discussing the ABCs Sustainable Menstruation
-                    </div>
-                </div>
-
-                <div class="work col">
-                    <div class="workImage">
-                        <img src="1.jpg" alt="work" class="img-fluid">
-                    </div>
-                    <div class="context mt-4">
-                        <span class="pinkText">3. Back to Basics</span>
-                        <br>
-                        Discussing the ABCs Sustainable Menstruation
-                    </div>
-                </div>
-
-                <div class="work col">
-                    <div class="workImage">
-                        <img src="1.jpg" alt="work" class="img-fluid">
-                    </div>
-                    <div class="context mt-4">
-                        <span class="pinkText">3. Back to Basics</span>
-                        <br>
-                        Discussing the ABCs Sustainable Menstruation
-                    </div>
-                </div>
-            </div>
+    <p class="groundworkGallery mt-5">Groundwork Gallery</p>
+    <div class="owl-carousel owl-theme mt-5">
+        <div class="item citem">
+            <img src="carouselItems/1.jpg" alt="" class="immage" style="border-radius:10px">
+            <p class="citem-content"> We identify and conduct a thorough survey of the location. 
+            </p>
         </div>
-    </div> -->
+        <div class="item citem">
+            <img src="carouselItems/2.jpg" alt="" class="immage">
+            <p class="citem-content">Our volunteers reach out to menstruators looking to join Titli's Sustainability Initiative </p>
+        </div>
+        <div class="item citem">
+            <img src="carouselItems/3.jpg" alt="" class="immage">
+            <p class="citem-content">Back to Basics: Discussing the ABCs Sustainable Menstruation</p>
+        </div>
+        <div class="item citem">
+            <img src="carouselItems/4.jpg" alt="" class="immage">
+            <p class="citem-content"> The menstruators are taught about the female anatomy in depth. </p>
+        </div>
+        <div class="item citem">
+            <img src="carouselItems/5resized.jpg" alt="" class="immage">
+            <p class="citem-content">The importance of sustainable menstrual practices is discussed. </p>
+        </div>
+        <div class="item citem">
+            <img src="carouselItems/6r.jpg" alt="" class="immage">
+            <p class="citem-content"> We are there every step of the way to help them make a comfortable and safe switch.</p>
+        </div>
+        <div class="item citem">
+            <img src="carouselItems/7.jpg" alt="" class="immage">
+            <p class="citem-content">Follow up sessions to ensure a smooth transition and resolve any queries.</p>
+        </div>
+    </div>
     <!-- section5 -->
     <br>
     <br>
@@ -431,6 +431,36 @@
                 var plasticWastedInKGs = (current_age - first_period) * (cycle_length * 60 * 4);
                 document.getElementsByClassName("tonesOfPlastic")[0].innerHTML = plasticWastedInKGs;
             }
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js"
+        integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+        integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script>
+            $('.owl-carousel').owlCarousel({
+                loop:true,
+                margin:20,
+                autoplay:true,
+                dots:false,
+                center:true,
+                autoplayTimeout:2000,
+                nav:false,
+                stagePadding:100,
+                responsive:{
+                    0:{
+                        items:1
+                    },
+                    300:{
+                        items:1
+                    },
+                    1000:{
+                        items:3,
+                        stagePadding:10
+                    }
+                }
+            })
         </script>
 </body>
 

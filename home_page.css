@@ -175,9 +175,46 @@ color: #F084B6;
     font-weight: 700;
 }
 
-.section4
+/* Carousel */
+.groundworkGallery
 {
-    min-height: 100vh;
+    font-family: Montserrat;
+font-size: 48px;
+font-weight: 700;
+line-height: 59px;
+letter-spacing: -0.40799999237060547px;
+text-align: center;
+
+}
+.owl-item.active.center {
+    transform: scale(1.1);
+    position: absolute;
+}
+.owl-item.active.center.immage{
+    border: 1px black solid;
+}
+.owl-item.active.center img
+{
+    border-radius: 10px;
+}
+.citem
+{
+    
+}
+.citem img
+{
+    border-radius: 10px;
+}
+.citem-content
+{
+
+font-family: Poppins;
+font-size: 24px;
+font-weight: 400;
+line-height: 36px;
+letter-spacing: -0.40799999237060547px;
+text-align: center;
+
 }
 
 .hedding
